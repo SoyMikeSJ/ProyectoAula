@@ -1,0 +1,26 @@
+* { font-family: sans-serif; }
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: #b0c4de;
+	margin: 0;
+	padding: 20px;
+	display: inline-block;
+	width: calc(100% - 40px);
+}
+
+header b {
+	font-size: xx-large;
+}
+
+header #leftTitle {
+	float: left;
+}
+
+header #rightTitle {
+	float: right;
+}
