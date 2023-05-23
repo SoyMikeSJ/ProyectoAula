@@ -28,3 +28,13 @@
     max-height: 300px;
     overflow: hidden;
   }
+
+
+@font-face {
+    font-family: Gloucester;
+    src: url(GLECB.TTF);
+}
+  
+.Gloucester {
+    font-family: Gloucester;
+}
