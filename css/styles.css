@@ -67,8 +67,15 @@ table td:has(img) {
   transition: all ease 500ms;
 }
 
+.carousel-item img {
+    width: 100%;
+}
 
-
+@media (min-width: 100px) {
+  .carousel-item img {
+    height: 75vh;
+  }
+}
 
 @font-face {
   font-family: Gloucester;
