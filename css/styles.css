@@ -2,6 +2,7 @@ body {
   background-position: 0% 45%;
   background-image: url('../res/img/Fondo2.png'), linear-gradient(to top, #4B69AB 30%, #6AD5FE 50%, #FFF 70%);
   background-repeat: no-repeat;
+  min-width: 520px;
 }
 
 .btn-guinda {
@@ -81,7 +82,7 @@ table td:has(img) {
   background: rgba(30,30,30,0.3);
 }
 
-@media (min-width: 100px) {
+@media (min-width: 1000px) {
   .carousel-item img {
     height: 75vh;
   }
