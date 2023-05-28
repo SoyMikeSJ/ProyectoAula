@@ -1,3 +1,9 @@
+body {
+  background-position: 0% 45%;
+  background-image: url('../res/img/Fondo2.png'), linear-gradient(to top, #4B69AB 30%, #6AD5FE 50%, #FFF 70%);
+  background-repeat: no-repeat;
+}
+
 .btn-guinda {
   background-color: #952F57;
   border-color: #4f152b;
@@ -24,17 +30,50 @@
   border-color: #4f152b;
 }
 
-  #homeCarousel {
-    max-height: 300px;
-    overflow: hidden;
-  }
+#homeCarousel {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+table {
+  border: 4px outset #33F;
+  text-align: justify;
+}
+
+table thead {
+  background: rgba(64, 133, 189, 0.7);
+  font-size: 1.5em;
+}
+
+table thead th {
+  text-align: center;
+  padding: 5px;
+}
+
+table tr, table td, table th {
+  border: 2px solid #33F;
+  padding: 0 10px 0 10px;
+}
+
+table td:has(img) {
+  padding: 0px;
+}
+
+.hide {
+  opacity: 0;
+  transition: all ease 500ms;
+}
 
 
 @font-face {
-    font-family: Gloucester;
-    src: url(GLECB.TTF);
+  font-family: Gloucester;
+  src: url(GLECB.TTF);
 }
   
 .Gloucester {
     font-family: Gloucester;
 }
+
+
+
+
