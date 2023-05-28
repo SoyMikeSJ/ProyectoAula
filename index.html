@@ -64,54 +64,91 @@
 	</header>
 	<!-- * /HEADER/ * -->
 
-	<main class="container p-3 m-auto rounded" style="background: linear-gradient(to bottom, rgba(243,255,255,0) 0%, rgba(243,255,255,0.6) 20%, rgba(243,255,255,0.7) 30%);"> 
+<main class="container p-3 m-auto rounded" style="background: linear-gradient(to bottom, rgba(243,255,255,0) 0%, rgba(243,255,255,0.6) 20%, rgba(243,255,255,0.7) 30%);"> 
 		<!-- ! CONTENT ! -->
-		<article class="container">
-			<marquee scrollamount="16">
-				<font style="font-size: 3rem; font-weight: bold;">El Cuidado del Agua</font>
-			</marquee>
-			<div class="card mb-3">
-			  	<div class="carousel-inner">
-				    <div class="carousel-item active">
-					    <img src="https://www.elagoradiario.com/wp-content/uploads/2021/01/agua-1140x600.jpg" class="d-block w-100" alt="Agua">
-					    <div id="datoC" style="display: none;">
-						    <div class="carousel-caption d-none d-md-block bg-black"  style="--bs-bg-opacity: .5;">
-						    	<h3>First slide label</h3>
-						        <p style="font-size: larger;">Some representative placeholder content for the first slide.</p>
-						    </div>
-						</div>
-				    </div>
-				</div>
-				<button id="datoCButton" class="btn btn-lg btn-danger">¿Qué es el agua?</button>
+	<section id="sobreElAgua" class="container">
+		<marquee scrollamount="16">
+			<font style="font-size: 3rem; font-weight: bold;">El Cuidado del Agua</font>
+		</marquee>
+		<div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
-			<hr class="border border-primary border-2 opacity-75">
-			<div class="row bg-light">
-				<a class="col my-2 mx-3 p-0" href="archive/index.php" style="text-decoration: none;">
-					<img src="https://th.bing.com/th/id/R.91d5dd2dda2db3bbfa162262ff3258c5?rik=NDz0cra2R8mcEg&riu=http%3a%2f%2fwww.usat.edu.pe%2fweb%2fwp-content%2fuploads%2f2021%2f03%2fD%c3%ada-mundial-del-agua.jpg&ehk=GocBHJiOX%2brurPIg7Pcv08epgxu3iN8UkioDpt4eiRA%3d&risl=&pid=ImgRaw&r=0" alt="" width="100%" class="border border-3 border-info rounded">
-					<!--<font class="Gloucester" align="center">
-						<div class="card-body mx-auto text-primary">
-							<h2>¿Qué es el Cuidado del Agua?</h2>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="overflow-x: hidden;">
+					<img src="https://tecnosolucionescr.net/templates/yootheme/cache/46_Agua_potable-1d20f4c5.png" class="d-block" alt="..." style="height: 75vh; margin: auto;">
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>¿Qué es el agua?</h5>
+							<p>Según la Real Academia Española, el agua se define como un <i>Líquido transparente, incoloro, inodoro e insípido en estado puro, cuyas moléculas están formadas por dos átomos de hidrógeno y uno de oxígeno, y que constituye el componente más abundante de la superficie terrestre y el mayoritario de todos los organismos vivos.</i></p>
 						</div>
-					</font>-->
-				</a>
-
-				<div class="col my-3 mx-3 p-0" style="max-width: 50%; text-decoration: none; display: inline-block;">
+					</div>
+				</div>
+				<div class="carousel-item" style="overflow-x: hidden;">
+					<img src="https://franchiasoc.com.ar/ecoblogger/cuidemos-el-agua/cuidemos-el-agua.jpg" class="d-block" alt="..." style="height: 75vh; margin: auto;">
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>Distribución en el Planeta</h5>
+							<p>Es considerada un recurso natural abundante en nuestro planeta, cubriendo tres cuartas partes de éste, en su mayoría tratándose de agua salda con un porcentaje de <em>96.5%</em> en los océanos, un <em>1.74%</em> en glaciares y placas de hielo, un <em>1.72%</em> en acuíferos y permafrost. El resto <em>(0.04%)</em> es agua dulce se encuentra en cuerpos de agua y seres vivos.</p>
+						</div>
+					</div>
+				</div>
+				<!--<div class="carousel-item" style="overflow-x: hidden;">
+					<img src="https://franchiasoc.com.ar/ecoblogger/cuidemos-el-agua/cuidemos-el-agua.jpg" class="d-block" alt="..." style="height: 75vh; margin: auto;">
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>Distribución en el Planeta</h5>
+							<p>Es considerada un recurso natural abundante en nuestro planeta, cubriendo tres cuartas partes de éste, en su mayoría tratándose de agua salda con un porcentaje de <em>96.5%</em> en los océanos, un <em>1.74%</em> en glaciares y placas de hielo, un <em>1.72%</em> en acuíferos y permafrost. El resto <em>(0.04%)</em> es agua dulce se encuentra en cuerpos de agua y seres vivos.</p>
+						</div>
+					</div>
+				</div>-->
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
+		</div>
+	</section>
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	<section id="cuidadoDelAgua" class="container">
+		<div class="row bg-light">
+			<a class="card col my-2 mx-3 p-0" href="archive/index.php" style="text-decoration: none;">
+				<img src="https://th.bing.com/th/id/R.91d5dd2dda2db3bbfa162262ff3258c5?rik=NDz0cra2R8mcEg&riu=http%3a%2f%2fwww.usat.edu.pe%2fweb%2fwp-content%2fuploads%2f2021%2f03%2fD%c3%ada-mundial-del-agua.jpg&ehk=GocBHJiOX%2brurPIg7Pcv08epgxu3iN8UkioDpt4eiRA%3d&risl=&pid=ImgRaw&r=0" alt="" width="100%" class="border border-3 border-info rounded">
+				<div class="card-body">
 					<font class="Gloucester" align="center">
-						<h2 class="m-0 text-primary">¿Cuál es la Importancia del Cuidado del Agua?</h2>
+						<h2 class="m-0 text-primary">¿Qué es el Cuidado del Agua?</h2>
 					</font>
-					<p align="justify">Cuando hablamos del cuidado del agua, nos referimos al uso racional del agua. Esto implica velar por la protección de las fuentes de agua limpia y consumible en nuestro planeta, procurando no contaminarla, no malbaratarla y así preservar este líquido vital no sólo para nuestra especie, sino para la vida entera en el planeta Tierra.</p>
+					<p>Cuando hablamos del cuidado del agua, nos referimos al uso racional del agua. Esto implica velar por la protección de las fuentes de agua limpia y consumible en nuestro planeta, procurando no contaminarla, no malbaratarla y así preservar este líquido vital no sólo para nuestra especie, sino para la vida entera en el planeta Tierra.</p>
 				</div>
+			</a>
+
+			<div class="col my-3 mx-3 p-0" style="max-width: 50%; text-decoration: none; display: inline-block;">
+				<font class="Gloucester" align="center">
+					<h2 class="m-0 text-primary">La Importancia del Agua</h2>
+				</font>
+				<p align="justify">Cuando hablamos del cuidado del agua, nos referimos al uso racional del agua. Esto implica velar por la protección de las fuentes de agua limpia y consumible en nuestro planeta, procurando no contaminarla, no malbaratarla y así preservar este líquido vital no sólo para nuestra especie, sino para la vida entera en el planeta Tierra.</p>
 			</div>
-			<div class="row bg-light">
-				<p class="mt-2" align="justify">
-					La escasez de agua constituye uno de los principales desafíos del siglo XXI al que se están enfrentando ya numerosas sociedades de todo el mundo. el uso y consumo de agua creció a un ritmo dos veces superior al de la tasa de crecimiento de la población, cada vez va en aumento el número de regiones con niveles crónicos de carencia de agua.
-					Cerca de 1.200 millones de personas, casi una quinta parte de la población mundial, vive en áreas de escasez física de agua, mientras que 500 millones se aproximan a esta situación.
-					A nivel nacional, Durante los últimos años, las regiones centro y norte de México han vivido escasez de agua debido un aumento en las sequías. Tan solo en México, el 42.11% de los acuíferos y 13.73%de las cuencas ya no tiene disponibilidad de agua. Además, la mayoría de las entidades del norte del país presentan un estrés hídrico.
-				</p>
-			</div>
-		</article>
-		<hr class="border border-primary border-2 opacity-75">
-		<table class="container w-75">
+		</div>
+		<div class="row bg-light pt-3">
+			<font class="Gloucester">
+				<h2 class="m-0 text-primary">Carencia Mundial y Nacional</h2>
+			</font>
+			<p class="mt-2" align="justify">
+				La escasez de agua constituye uno de los principales desafíos del siglo XXI al que se están enfrentando ya numerosas sociedades de todo el mundo. el uso y consumo de agua creció a un ritmo dos veces superior al de la tasa de crecimiento de la población, cada vez va en aumento el número de regiones con niveles crónicos de carencia de agua.
+				Cerca de 1.200 millones de personas, casi una quinta parte de la población mundial, vive en áreas de escasez física de agua, mientras que 500 millones se aproximan a esta situación.
+				A nivel nacional, Durante los últimos años, las regiones centro y norte de México han vivido escasez de agua debido un aumento en las sequías. Tan solo en México, el 42.11% de los acuíferos y 13.73%de las cuencas ya no tiene disponibilidad de agua. Además, la mayoría de las entidades del norte del país presentan un estrés hídrico.
+			</p>
+		</div>
+	</section>
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	<section class="container w-75" id="tiposDeAgua">
+		<table>
 			<thead>
 				<tr> <th colspan="3">Tipos de Agua</th></tr>
 			</thead>
@@ -178,40 +215,43 @@
 				</tr>
 			</tbody>
 		</table>
+	</section>
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	<section id="data">
+		
+	</section>
+	<section id="collageAgua">
+		
+	</section>
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	<section id="other data" class="mb-3">
+		
+	</section>
+	<center><embed src="res/img/RANA.mp4" type="video/mp4" id="videoAgua"></center>
 		<!-- ! /CONTENT/ ! -->
-	</main>
+</main>
 	
 
 	<!-- ! FOOTER ! -->
-	<footer class="w-100 text-center text-white pb-4 mt-5" style="bottom: 0%; background-color: #edf4ff; bottom: 0;">
-	  <div class="container pt-4">
-	    <div class="align-middle">
-	      <a class="btn-guinda m-1" href="#!">CECyT 14</a>
-	      <a class="btn-guinda m-1" href="#!">IPN</a>
-	      <a class="btn btn-sm btn-info text-dark m-1" href="#!">Fundación Aquae</a>
-	      <a class="btn btn-sm btn-success text-dark m-1" href="#!">Naciones Unidas</a>
-	    </div>
-	  </div>
-	  <div class="container"><hr class="text-dark"></div>
-	  <small class="text-center text-dark mb-5">
-	    MikeSJ © 2023 - todos los derechos reservados.
-	  </small>
+	<footer class="w-100 text-center text-white pb-4 mt-5 bg-primary" style="bottom: 0%;">
+		<div class="container pt-4">
+			<div class="align-middle">
+				<a class="btn-guinda m-1" href="#!">CECyT 14</a>
+				<a class="btn-guinda m-1" href="#!">IPN</a>
+				<a class="btn btn-sm btn-info text-dark m-1" href="#!">Fundación Aquae</a>
+				<a class="btn btn-sm btn-success text-dark m-1" href="#!">Naciones Unidas</a>
+			</div>
+		</div>
+		<hr class="border border-white border opacity-75 w-50 mx-auto">
+	  	<small class="text-center text-light mb-5">
+	    	Grupo 2IM5 © 2023 - todos los derechos reservados.
+	  	</small>
 	</footer>
 	<!-- ! /FOOTER/ ! -->
 	<script>
 		$(document).ready(function() {
 			$('div#cover').addClass('hide')
 			setTimeout(() => { $('div#cover').remove() }, "550");
-		});
-
-		$('#datoCButton').click(function(e) {
-			if($('#datoC').hasClass('dis')) {
-				$('#datoC').removeClass('dis');
-				$('#datoC').hide('fast');
-			} else {
-				$('#datoC').addClass('dis');
-				$('#datoC').show('fast');
-			}
 		});
 	</script>	
 </body>

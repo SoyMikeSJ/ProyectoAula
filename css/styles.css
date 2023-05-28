@@ -30,11 +30,6 @@ body {
   border-color: #4f152b;
 }
 
-#homeCarousel {
-  max-height: 300px;
-  overflow: hidden;
-}
-
 table {
   border: 4px outset #33F;
   text-align: justify;
@@ -55,6 +50,14 @@ table tr, table td, table th {
   padding: 0 10px 0 10px;
 }
 
+table th {
+  background: rgba(0,150,200,0.4);
+}
+
+table td {
+  background: rgba(0,125,250,0.3);
+}
+
 table td:has(img) {
   padding: 0px;
 }
@@ -63,6 +66,8 @@ table td:has(img) {
   opacity: 0;
   transition: all ease 500ms;
 }
+
+
 
 
 @font-face {

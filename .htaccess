@@ -1,5 +1,0 @@
-RewriteEngine on
-RewriteBase /
-RewriteRule ^Inicio/$ index.php [L]
-RewriteRule [Ii][Nn][Ii][Cc][Ii][Oo]/ Inicio/ [R]
-RewriteRule ^Post/([0-9]+)/(.*)$  /post.php?id=$1 [L]
