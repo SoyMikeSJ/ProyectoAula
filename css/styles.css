@@ -69,6 +69,7 @@ table td:has(img) {
 
 .carousel-item img {
     width: 100%;
+    height: auto;
 }
 
 @media (min-width: 100px) {
