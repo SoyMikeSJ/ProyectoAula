@@ -87,15 +87,6 @@ table td:has(img) {
   }
 }
 
-@font-face {
-  font-family: Gloucester;
-  src: url(GLECB.TTF);
-}
-  
-.Gloucester {
-    font-family: Gloucester;
-}
-
 
 
 

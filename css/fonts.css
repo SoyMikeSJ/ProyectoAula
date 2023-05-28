@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Gloucester;
+  src: url(GLECB.TTF);
+}
+  
+.Gloucester {
+    font-family: Gloucester;
+}
+
+@font-face {
+  font-family: CollegeSemiCondensed;
+  src: url(CollegeSemiCondensed.ttf);
+}
+  
+.CollegeSemiC {
+    font-family: CollegeSemiCondensed;
+}
+
+@font-face {
+  font-family: DancingScript;
+  src: url(DancingScript.ttf);
+}
+  
+.DancingScript {
+    font-family: DancingScript;
+}
