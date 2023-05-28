@@ -72,6 +72,15 @@ table td:has(img) {
     height: auto;
 }
 
+.car-control {
+  background: rgba(30,30,30,0.1) !important;
+  transition: all linear 100ms;
+}
+
+.car-control:hover {
+  background: rgba(30,30,30,0.3);
+}
+
 @media (min-width: 100px) {
   .carousel-item img {
     height: 75vh;
