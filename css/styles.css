@@ -1,5 +1,5 @@
 body {
-  background-position: 100% 45%;
+  background-position: 100% 0%;
   background-image: url('../res/img/Fondo2.png'), linear-gradient(to bottom, #FFF 35%, #6AD5FE 40%, #4B69AB 60%);
   background-repeat: no-repeat;
   min-width: 520px;

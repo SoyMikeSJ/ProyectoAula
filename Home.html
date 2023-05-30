@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Dedicados al Cuidado del Agua, procurando no contaminarla, no maltratarla y así preservar este líquido vital llamado Agua no sólo para nuestra especie, sino para la vida entera en el planeta Tierra."/>
+	<meta name="author" content="MikeSJ" />
+	<meta name="copyright" content="MikeSJ" />
+	<meta name="keywords" content="agua, prevención, cuidado, cuidar"/>
+	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" href="css/styles.css?v=1">
+	<link rel="stylesheet" href="css/fonts.css?v=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<title>Gota a gota - Cuida, Conserva, Actúa</title>
+</head>
+<body>
+	<div id="cover" style="
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	background: #FFF;
+	width: 100vw;
+	height: 100vh;
+	">
+	</div>
+	<!-- * /HEADER/ * -->
+	<header class="bg-primary-subtle">
+		<div class="bg-primary container">
+		<nav class="px-2 navbar navbar-expand-xl bg-primary" style="width: 90%; max-width: 95%; " data-bs-theme="dark">
+			<div class="container-fluid">
+				<a href="http://ipn.mx/">
+					<img src="res/img/LogosIPN/LOGO POLI PANTONE 222 C.png" alt="IPN" height="50"class="me-3">
+				</a>
+				<a class="navbar-brand ps-4 pe-2" href="index.html">
+					<img src="res/img/Logos/LogoWhite.png" alt="Gota a Gota" width="200">
+				</a>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="res/docs/ElCicloDeHunter.pdf">Cuento del Agua</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="poema.html">Poema del Agua</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="res/docs/ElSentirDelAgua.pdf">Cartel del Agua</a>
+						</li>
+						<!--<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>-->
+					</ul>
+					<a href="http://www.cecyt14.ipn.mx/" class="d-flex text-white float-end f-md-none">
+						<small class="ps-2 float-end m-0 fw-bold pt-4">CECyT No. 14 <i class="me-2">"Luis Enrique Erro"</i></small>
+						<img src="res/img/LogosIPN/EscudoCECyT14.png" alt="IPN" height="50"class="me-3">
+					</a>
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</nav>
+		</div>
+	</header>
+	<div class="bg-primary-subtle p-0">
+		<div class="container p-0">
+			<marquee scrollamount="10" class="m-0 bg-info bg-gradient text-dark opacity-75">
+				<h1>Medidas Preventivas para el Uso Correcto y Sustentable del Agua</h1>
+			</marquee>
+		</div>
+	</div>
+	<!-- * /HEADER/ * -->
+
+<aside>
+	<style type="text/css">
+		#contentTable {
+			z-index: 5;
+			left: 20px;
+			top: 180px;
+			transition: all ease-in-out 100ms;
+		}
+
+		#contentTable:has(#hiddableIndex.d-none) {
+			left: -30px;
+			transform: rotate(90deg);
+		}
+	</style>
+	<div id="contentTable" class="card position-fixed">
+		<a href="javascript:toggleIndex()" class="card-header btn btn-light"><b class="me-3"><big>Índice</big></b></a>
+	    <div class="card-body p-0 d-none visually-hidden" id="hiddableIndex">
+	    	<div class="list-group list-group-flush" id="indexTable">
+				<a class="list-group-item list-group-item-action" href="#SobreElAgua">Sobre el Agua</a>
+				<a class="list-group-item list-group-item-action" href="#CuidadoDelAgua">El Cuidado del Agua</a>
+				<a class="list-group-item list-group-item-action" href="#TiposDeAgua">Los Tipos de Agua</a>
+				<a class="list-group-item list-group-item-action" href="#ComoCuidarElAgua">¿Cómo cuidarla?</a>
+				<a class="list-group-item list-group-item-action" href="#CollageAgua">Collage</a>
+				<a class="list-group-item list-group-item-action" href="#Video">Video</a>
+			</div>
+	    </div>
+	</div>
+</aside>
+
+<main data-bs-spy="scroll" data-bs-target="#indexTable" data-bs-smooth-scroll="true" class="container p-3 m-auto rounded" style="background: linear-gradient(to bottom, rgba(243,255,255,0.7) 0%, rgba(243,255,255,0.6) 20%, rgba(243,255,255,0.7));"> 
+		<!-- ! CONTENT ! -->
+	<section id="SobreElAgua" class="container">
+		<div class="row">
+			<div class="d-none d-md-block col-md-2 col-lg-3 col-xl"></div>
+			<div class="col container">
+				<div style="font-size: 3rem;" id="TITLE" class="mx-auto">
+					<i>E</i><i>l</i><i> </i><i>C</i><i>u</i><i>i</i><i>d</i><i>a</i><i>d</i><i>o</i><i> </i><i>d</i><i>e</i><i>l</i><i> </i><i>A</i><i>g</i><i>u</i><i>a</i>
+				</div>
+			</div>
+			<div class="col"></div>
+		</div>
+		<div id="homeCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="overflow-x: hidden;">
+					<img src="https://tecnosolucionescr.net/templates/yootheme/cache/46_Agua_potable-1d20f4c5.png" class="d-block" alt="..." >
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>¿Qué es el agua?</h5>
+							<p>Según la Real Academia Española, el agua se define como un <i>Líquido transparente, incoloro, inodoro e insípido en estado puro, cuyas moléculas están formadas por dos átomos de hidrógeno y uno de oxígeno, y que constituye el componente más abundante de la superficie terrestre y el mayoritario de todos los organismos vivos.</i></p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="overflow-x: hidden;">
+					<img src="https://franchiasoc.com.ar/ecoblogger/cuidemos-el-agua/cuidemos-el-agua.jpg" class="d-block" alt="..." >
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>Distribución en el Planeta</h5>
+							<p>Es considerada un recurso natural abundante en nuestro planeta, cubriendo tres cuartas partes de éste, en su mayoría tratándose de agua salda con un porcentaje de <em>96.5%</em> en los océanos, un <em>1.74%</em> en glaciares y placas de hielo, un <em>1.72%</em> en acuíferos y permafrost. El resto <em>(0.04%)</em> es agua dulce se encuentra en cuerpos de agua y seres vivos.</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="overflow-x: hidden;">
+					<img src="https://i2.wp.com/sisolinmobiliarias.com/blog/wp-content/uploads/2018/03/dia-mundial-del-agua.jpg?fit=900%2C600" class="d-block" alt="..." >
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>El Agua por el mundo</h5>
+							<p>Encontramos el agua en los distintos elementos naturales que están distribuidos por todo el planeta. En su estado líquido se encuentra en ríos, lagos, arroyos, océanos. En su aspecto sólido, se encuentra en los polos o cuando el agua se congela. Y el agua en forma de gas se encuentra en la atmosfera porque es el vapor.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev car-control" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next car-control" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
+		</div>
+	</section>
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	<section id="CuidadoDelAgua" class="container">
+		<div class="row bg-light">
+			<button class="btn btn-primary card col p-0 m-3" data-bs-toggle="modal" data-bs-target="#modalCuidadoAgua">
+				<img src="https://th.bing.com/th/id/R.91d5dd2dda2db3bbfa162262ff3258c5?rik=NDz0cra2R8mcEg&riu=http%3a%2f%2fwww.usat.edu.pe%2fweb%2fwp-content%2fuploads%2f2021%2f03%2fD%c3%ada-mundial-del-agua.jpg&ehk=GocBHJiOX%2brurPIg7Pcv08epgxu3iN8UkioDpt4eiRA%3d&risl=&pid=ImgRaw&r=0" alt="" width="100%" class="border border-3 border-info rounded">
+				<div class="card-body">
+					<font class="Gloucester" align="center">
+						<h2 class="m-0">¿Qué es el Cuidado del Agua?</h2>
+					</font>
+				</div>
+			</button>
+
+			<div class="col my-3 mx-3 p-0" style="text-decoration: none; display: inline-block;">
+				<font class="Gloucester" align="center">
+					<h2 class="m-0 text-primary">La Importancia del Agua</h2>
+				</font>
+				<p align="justify">El agua permite en desarrollo de la sociedad, la justicia social y contrarresta la pobreza, también resalta atribuciones culturales, simbólicas y es un elemento esencial para toda la biosfera, también es esencial para el desarrollo de procesos orgánicos, además estructura el sistema circulatorio, y distribuye nutrientes hacia todo el cuerpo a través de la sangre.
+				<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/C313/production/_128393994_portadacolor.png" alt="importancia agua">
+				</p>
+			</div>
+		</div>
+		<div class="row bg-light py-3">
+			<font class="Gloucester">
+				<h2 class="m-0 text-primary">Carencia Mundial y Nacional</h2>
+			</font>
+			<div class="row">
+				<button class="btn btn-primary card col p-0 m-3" data-bs-toggle="modal" data-bs-target="#modalCarenciaMundial">
+					<img src="https://www.caf.com/media/2444418/visiones-exceso-agua.png" alt="" class="card-img-top">
+					<h5 class="card-body d-inline-block mx-auto text-center">Nivel Mundial</h5>
+				</button>
+				<button class="btn btn-primary card col p-0 m-3" data-bs-toggle="modal" data-bs-target="#modalCarenciaNacional">
+					<img src="https://cdn0.ecologiaverde.com/es/posts/0/8/1/que_es_la_escasez_de_agua_2180_0_600.jpg" alt="" class="card-img-top">
+					<h5 class="card-body d-inline-block mx-auto text-center">Nivel Nacional</h5>
+				</button>
+
+			</div>
+		</div>
+	</section>
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	<section class="container w-75" id="TiposDeAgua">
+		<table>
+			<thead>
+				<tr> <th colspan="3">Tipos de Agua</th></tr>
+			</thead>
+			<tbody>
+				<tr>
+				    <th class="py-2">Nombre</th>
+				    <th class="py-2">Descripción</th>
+				    <th class="py-2">Imagen</th>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Potable</td>
+					<td>Aquella destinada para el consumo humano.</td>
+					<td><img src="res/img/agua_potable.jpg" alt="Agua Potable" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Dulce</td>
+					<td>Se encuentra en la superficie terrestre de manera natural, así como en ecosistemas subterráneos.</td>
+					<td><img src="res/img/agua_dulce.jpg" alt="Agua Dulce" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Salada</td>
+					<td>Posee una concentración de sales minerales disueltas de cerca del 35%. Se encuentra en océanos y mares.</td>
+					<td><img src="res/img/agua_salada.jpg" alt="Agua Salada" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Salobre</td>
+					<td>Tiene más sales disueltas que la dulce, pero menos que la salada.</td>
+					<td><img src="res/img/agua_salobre.jpg" alt="Agua Salobre" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Dura</td>
+					<td>Aquella que contiene un alto nivel de minerales disueltos.</td>
+					<td><img src="res/img/agua_dura.jpg" alt="Agua Dura" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Blanda</td>
+					<td>En ella se encuentra disuelta una mínima cantidad de sales.</td>
+					<td><img src="res/img/agua_blanda.jpg" alt="Agua Blanda" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Destilada</td>
+					<td>Cuando ha sido purificada o limpiada mediante destilación.</td>
+					<td><img src="res/img/agua_destilada.jpg" alt="Agua Destilada" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Residuales</td>
+					<td>Cualquier tipo de agua cuya calidad está afectada negativamente por la influencia del ser humano.</td>
+					<td><img src="res/img/aguas_residuales.jpg" alt="Aguas Residuales" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Negras</td>
+					<td>Contaminadas con heces u orina.</td>
+					<td><img src="res/img/aguas_negras.jpg" alt="Aguas Negras" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Grises</td>
+					<td>También conocida como <em>agua usada</em>, es aquella que proviene del uso doméstico.</td>
+					<td><img src="res/img/aguas_grises.jpg" alt="Aguas Grises" width="128" loading="lazy"></td>
+				</tr>
+				<tr>
+					<td class="text-primary fw-bold">Cruda o Bruta</td>
+					<td>No ha recibido ningún tratamiento y suele encontrarse en fuentes y reservas naturales.</td>
+					<td><img src="res/img/agua_cruda.jpg" alt="Agua Crua o Bruta" width="128" loading="lazy"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+<section id="ComoCuidarElAgua">
+	<h1 class="text-center mb-3 Gloucester text-primary">- ¿Cómo podemos Cuidar el Agua? -</h1>
+	<div class="w-75 mx-auto accordion accordion-flush" id="cuidarDelAgua">
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medidasPreventivas" aria-expanded="false" aria-controls="medidasPreventivas">
+					Medidas Preventivas
+				</button>
+			</h2>
+			<div id="medidasPreventivas" class="accordion-collapse collapse show" data-bs-parent="#cuidarDelAgua">
+				<div class="accordion-body bg-info-subtle">
+					<ul>
+						<li>Comenzado por el cuidado de esta, lo cual refiere en que debemos concientizar su consumo en exceso, y así poner un límite respecto al uso diario.</li>
+						<li>Reportar fugas de agua: Puede que en algún momento te encuentres con un fallo en las tuberías u otros medios que proporcionen el agua, como ciudadanos tenemos la obligación de reportar cualquier problema en estas.</li>
+						<li>Almacenar el agua: Es importante tener agua de “repuesto” guardada por si algún momento se requiere de esta; para que esta pueda ser almacenada existen tanques de agua los cuales tienen un costo aproximado de 1500 a 2000 pesos, si bien este parece un precio elevado trae consigo múltiples beneficios para la buena administración del agua.</li>
+						<li>Cuidar el medio ambiente: Es importante mantener el buen funcionamiento del ciclo natural del agua, ya que de este dependen otros fenómenos naturales. Al crear alteraciones se puede crear un efecto invernadero, calentamiento global, sequias, etc. Dañando a todo ser humano o especie natural del planeta.</li>
+						<li>Cerrar el paso del agua al afeitarse, cepillarse los dientes y lavarse las manos: Estas acciones comunes y frecuentes consumen una cantidad considerable de agua que puede ser reducida en un 90% al cerrar el grifo cuando no se utilice el agua.</li>
+						<li>No tires objetos no degradables al inodoro: Muchos residuos no logran desintegrarse al llegar a las plantas de tratado y contaminan el agua.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Recomendaciones" aria-expanded="false" aria-controls="Recomendaciones">
+					Recomendaciones
+				</button>
+			</h2>
+			<div id="Recomendaciones" class="accordion-collapse collapse" data-bs-parent="#medidasPreventivas">
+				<div class="accordion-body bg-info-subtle">
+					<ul>
+						<li>Ducha: No mal gastes el agua, ni tomes mucho tiempo bañándote, recolecta en un balde el agua que caiga al salir de la ducha para utilizarla en otras actividades.
+						<li>Limpieza de casa: No mal gastes el agua a la hora de lavar o trapear, implementa el uso de productos amigables con el medio ambiente</li>
+						<li>Lavado de ropa: Remójala antes de lavarla. Si lavas la ropa en la lavandería, puedes reutilizar el agua enjuagada para la siguiente carga de ropa sucia. El tallar a mano te ayudará a ahorrar agua. </li>
+						<li>No tirar aceite al caño. El aceite es el mayor contaminante del agua.</li>
+						<li>Reduce al mínimo la evaporación regando las plantas durante las horas tempranas de la mañana, cuando las temperaturas están más frescas y los vientos son más ligeros.</li>
+						<li>Usa el agua que quedó sucia en la lavadora para limpiar otras áreas de casa como pasillos y patios etc.</li>
+						<li>Cierra el grifo también mientras te lavas los dientes. lavarse los dientes es algo que hacemos varias veces al día. Por ello, para evitar un excesivo consumo de agua es importante usar un vaso de enjuague.</li>
+						<li>Usa sistemas de control del agua en el inodoro.</li>
+						<li>Utiliza la lavadora con carga completa para un mejor aprovechamiento del agua utilizada.</li>
+						<li>Gastar menos jabones y suavizantes, o comprarlos libres de fosfatos.</li>
+						<li>No tirar basura a ríos, lagos o al mar ya que ensucia el medio ambiente y además puede poner en peligro a otros seres vivos.</li>
+						<li>No comprar productos cosméticos que contengan microesferas de plásticos como pastas de dientes o exfoliantes.</li>
+						<li>No tirar líquidos peligrosos y contaminantes por el fregadero, inodoro o directamente a los ríos como aceites, disolventes, pinturas o combustible.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Estrategias" aria-expanded="false" aria-controls="Estrategias">
+					Estrategias
+				</button>
+			</h2>
+			<div id="Estrategias" class="accordion-collapse collapse" data-bs-parent="#medidasPreventivas">
+				<div class="accordion-body bg-info-subtle">
+					<ul>
+						<li>Dúchate rápidamente.</li>
+						<li>Recicla el agua.</li>
+						<li>Ten cuidado con las fugas. </li>
+						<li>Usa eficientemente los electrodomésticos.</li>
+						<li>El aceite contamina el agua.</li>
+						<li>Lavado de ropa.</li>
+						<li>Controlar vertidos. </li>
+						<li>Disminuir el uso de combustibles.</li>
+						<li>Plantar árboles cerca de ríos y lagos. </li>
+						<li>Recolección de agua.</li>
+						<li>Regular la administración del agua.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Propuestas" aria-expanded="false" aria-controls="Propuestas">
+					Propuestas
+				</button>
+			</h2>
+			<div id="Propuestas" class="accordion-collapse collapse" data-bs-parent="#medidasPreventivas">
+				<div class="accordion-body bg-info-subtle">
+					<ul>
+						<li>Recolección del agua, consiste en aplicar algunos sistemas e infraestructura específica que permita que la captación pluvial pueda ser aprovechada de manera óptima para la realización de diversas actividades cotidianas.</li>
+						<li>Reutiliza el agua de la lluvia, esta puede ser de gran ayuda ya que podemos sustituirla por el agua que usamos comúnmente, de la misma manera se puede utilizar esta agua para en wc, lavar los pisos, ropa, etc.</li>
+						<li>También se pueden colocar/conectar tuberías al techo, de esta manera recolectándola en baldes para así darle una segunda vida.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!---------------------><!---------------------><!---------------------><!---------------------><!--------------------->
+	<center class="mt-4" id="CollageAgua">
+		<img src="https://img.freepik.com/vector-premium/conjunto-eco-guardar-imagenes-medio-ambiente-personas-cuidando-collage-planeta-cero-desperdicio-piensa-verde-salva-planeta-nuestro-texto-escrito-mano-hogar-diseno-plano_250257-243.jpg?w=2000" alt="Collage" height="500">
+	</center>
+<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	<section id="Video" class="mb-3">
+	<center>
+		<video class="w-75" controls>
+  			<source src="res/img/RANA.mp4" type="video/mp4">
+		</video>
+	</center>
+	</section>
+		<!-- ! /CONTENT/ ! -->
+</main>
+	
+
+	<!-- ! FOOTER ! -->
+	<footer class="w-100 text-center text-white pb-4 mt-5 bg-primary" style="bottom: 0%;">
+		<div class="container pt-4">
+			<div class="align-middle">
+				<a class="btn-guinda m-1" href="https://cecyt14.ipn.mx/">CECyT 14</a>
+				<a class="btn-guinda m-1" href="htps://ipn.mx/">IPN</a>
+				<a class="btn btn-sm btn-info text-dark m-1" href="https://www.iagua.es/">iagua</a>
+				<a class="btn btn-sm btn-info text-dark m-1" href="https://www.fundacionaquae.org/">Fundación Aquae</a>
+				<a class="btn btn-sm btn-success text-dark m-1" href="https://www.un.org/es/">Naciones Unidas</a>
+			</div>
+		</div>
+		<hr class="border border-white border opacity-75 w-50 mx-auto">
+	  	<small class="text-center text-light mb-5">
+	    	Grupo 2IM5 - MikeSJ © 2023 Todos los derechos reservados.
+	  	</small>
+	</footer>
+	<!-- ! /FOOTER/ ! -->
+
+<!--! MODALS !-->
+<div class="modal fade" id="modalCuidadoAgua" tabindex="-1" aria-labelledby="modalCuidadoAguaLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="modalCuidadoAguaLabel">El Cuidado del Agua</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p align="justify">Cuando hablamos del cuidado del agua, nos referimos al uso racional del agua. Esto implica velar por la protección de las fuentes de agua limpia y consumible en nuestro planeta, procurando no contaminarla, no malbaratarla y así preservar este líquido vital no sólo para nuestra especie, sino para la vida entera en el planeta Tierra.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>					
+
+<div class="modal fade" id="modalCarenciaNacional" tabindex="-1" aria-labelledby="modalCarenciaNacionalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="modalCarenciaNacionalLabel">Carencia a Nivel Nacional</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p align="justify">A nivel nacional, Durante los últimos años, las regiones centro y norte de México han vivido escasez de agua debido un aumento en las sequías. Tan solo en México, el 42.11% de los acuíferos y <em>13.73%</em> de las cuencas ya no tiene disponibilidad de agua. Además, la mayoría de las entidades del norte del país presentan un estrés hídrico.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalCarenciaMundial" tabindex="-1" aria-labelledby="modalCarenciaMundialLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="modalCarenciaMundialLabel">Carencia a Nivel Mundial</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p align="justify">La escasez de agua constituye uno de los principales desafíos del siglo XXI al que se están enfrentando ya numerosas sociedades de todo el mundo. el uso y consumo de agua creció a un ritmo dos veces superior al de la tasa de crecimiento de la población, cada vez va en aumento el número de regiones con niveles crónicos de carencia de agua.
+				Cerca de 1.200 millones de personas, casi una quinta parte de la población mundial, vive en áreas de escasez física de agua, mientras que 500 millones se aproximan a esta situación.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--! MODALS !-->
+
+<script>
+	$(document).ready(function() {
+		$('div#cover').addClass('hide')
+		setTimeout(() => { $('div#cover').remove() }, "550");
+	});
+
+	function toggleIndex() {
+		var v = $("#hiddableIndex").hasClass('visually-hidden');
+		if(!v) {
+			$("#hiddableIndex").addClass('visually-hidden');
+			$("#hiddableIndex").addClass('d-none');
+		}
+		else {
+			$("#hiddableIndex").removeClass('d-none');
+			setTimeout(() => { $("#hiddableIndex").removeClass('visually-hidden') }, "100");
+		}
+	}
+</script>	
+</body>
+</html>
+<!--College Semi-Condensed, Dancing Script-->
